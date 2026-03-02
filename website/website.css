@@ -4,7 +4,7 @@ body{
 }
 
 .header{
-padding: 20px;
+padding: 5px;
     font-size: 16px;
     display: flex;
     align-items: center;
@@ -23,7 +23,7 @@ padding: 20px;
 
 .logo img{
     height: auto;
-    width: 150px;
+    width: 100px;
 }
 
 .hero{
@@ -36,7 +36,7 @@ padding: 20px;
 .hero img{
     display: block;
     width: 100%;
-
+    height: 320px;
 }
 
 .black{
@@ -76,4 +76,54 @@ padding: 20px;
     border-radius: 10px;
     margin-top: 60px;
     border: solid 1px white;
+}
+.cards{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    gap: 25px;
+    padding: 50px 30px;
+
+}
+.featured{
+    font-size: 40px;
+    font-weight: bold;
+}
+.featured1{
+    font-size: 16px;
+}
+.producte{
+    display: flex;
+    flex-direction: row;
+    gap: 40px;
+    justify-content: center;
+    align-items: center;
+
+}
+.card{
+    display: flex;
+    flex-direction: column;
+    background: black;
+    border-radius: 6px;
+    overflow: hidden;
+    transition: transform .6s ease, box-shadow .6s ease;
+
+}
+.boom{
+    width: 300px;
+    height: 416px;
+    display: block;
+
+}
+.detali{
+    display: flex;
+    flex-direction: row;
+    color: limegreen;
+    justify-content: space-between;
+    padding: 15px 7px ;
+
+}
+.card:hover{
+    transform: translateY(-5px)scale(1.01);
 }
