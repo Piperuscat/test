@@ -231,6 +231,7 @@ body{
     padding: 60px 170px;
     gap: 60px;
     position: relative;
+    width: 100%;
 }
 .review_text{
     display: flex;
@@ -291,4 +292,82 @@ body{
     position: absolute;
     margin-bottom: 400px;
     border-top: 1px solid rgba(0, 0, 0, 0.2);
+}
+.email{
+    display: flex;
+    flex-direction: column;
+    margin-top: 110px;
+    gap: 10px;
+    justify-content: center;
+
+}
+.subscribe{
+    display: flex;
+    font-weight: bold;
+    font-size: 40px;
+    padding: 0px 100px;
+    place-content: center;
+
+}
+.borter4{
+    border: 1px grey solid;
+    width: 100%;
+    position: absolute;
+    margin-bottom: 350px;
+    border-top: 1px solid rgba(0, 0, 0, 0.2);
+
+}
+.update{
+    display: flex;
+    font-size: 16px;
+    place-content: center;
+}
+.email1{
+    font-weight: bold;
+    font-size: 14px;
+    place-self: flex-start;
+    padding-left: 390px;
+}
+.entergm{
+    display: flex;
+    font-size: 14px;
+    color: rgba(0, 0, 0, 0.5);
+    place-self: flex-start;
+    margin-left: 390px;
+    border: grey solid 1px;
+    width: 650px;
+    padding: 6px;
+    margin-top: 5px;
+}
+.subsc{
+    display: flex;
+    font-size: 16px;
+    font-weight: bold;
+    color: red;
+}
+.black1{
+    color: white;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background: black;
+    font-size: 20px;
+    border-radius: 10px;
+    margin-top: 40px;
+    width: 160px;
+    height: 48px;
+    place-content: center;
+}
+.mult{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    place-content: center;
+}
+.privacy{
+    font-size: 12px;
+    color: rgba(0, 0, 0, 0.5);
+    place-self: flex-start;
+    margin-left: 390px;
 }
