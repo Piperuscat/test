@@ -296,10 +296,11 @@ body{
 .email{
     display: flex;
     flex-direction: column;
-    margin-top: 110px;
+    margin-top: 50px;
     gap: 10px;
     justify-content: center;
-
+    padding-bottom: 50px;
+    padding-top: 50px;
 }
 .subscribe{
     display: flex;
@@ -370,4 +371,23 @@ body{
     color: rgba(0, 0, 0, 0.5);
     place-self: flex-start;
     margin-left: 390px;
+}
+.footer{
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    gap: 60px;
+    margin-top: 150px;
+    font-weight: var(400);
+    font-size: 20px;
+    margin-bottom: 110px;
+
+}
+.borter6{
+    border: 1px grey solid;
+    width: 100%;
+    position: absolute;
+    margin-bottom: 350px;
+    border-top: 1px solid rgba(0, 0, 0, 0.2);
+    margin-top: -100px;
 }
