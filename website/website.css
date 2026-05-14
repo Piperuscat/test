@@ -1,6 +1,11 @@
+*, *::before, *::after{
+    box-sizing: border-box;
+}
 body{
+    margin: 0;
     background: white;
-    font-family: 'Roboto:Bold', sans-serif;
+    font-family: 'Roboto', Arial, sans-serif;
+    overflow-x: hidden;
 }
 
 .header{
@@ -45,6 +50,7 @@ body{
     background: rgba(0, 0, 0, 0.7);
 }
 .title{
+    position: relative;
     color: red;
     z-index: 10;
     font-size: 73px;
@@ -52,7 +58,9 @@ body{
 }
 
 .subtitle{
- color: white;
+    position: relative;
+    z-index: 10;
+    color: white;
     font-size: 25px;
 }
 
@@ -66,6 +74,8 @@ body{
 
 }
 .button{
+    position: relative;
+    z-index: 10;
     color: white;
     display: flex;
     justify-content: center;
@@ -76,8 +86,10 @@ body{
     border-radius: 10px;
     margin-top: 60px;
     border: solid 1px white;
+    cursor: pointer;
 }
 .cards{
+    position: relative;
     display: flex;
     flex-direction: column;
     justify-content: center;
@@ -121,8 +133,7 @@ body{
     flex-direction: row;
     color: limegreen;
     justify-content: space-between;
-    padding: 15px 7px ;
-
+    padding: 15px 7px;
 }
 .card:hover{
     transform: translateY(-5px)scale(1.01);
@@ -134,16 +145,16 @@ body{
     gap: 100px;
     justify-content: center;
     padding: 60px 170px;
-    margin: 100px;
+    margin: 100px 0;
 }
 .up{
     font-weight: bold;
     font-size: 40px;
-    font-family: 'Roboto:Bold', sans-serif;
+    font-family: 'Roboto', Arial, sans-serif;
 }
 .down{
     font-size: 16px;
-    font-family: 'Roboto:Bold', sans-serif;
+    font-family: 'Roboto', Arial, sans-serif;
     width: 354px;
 }
 .right{
@@ -174,11 +185,11 @@ body{
 .instr{
     font-size: 20px;
     font-weight: bold;
-    font-family: 'Roboto:Bold', sans-serif;
+    font-family: 'Roboto', Arial, sans-serif;
 }
 .desc{
     font-size: 16px;
-    font-family: 'Roboto:Bold', sans-serif;
+    font-family: 'Roboto', Arial, sans-serif;
 }
 .container_lafel{
     display: flex;
@@ -224,14 +235,13 @@ body{
     font-weight: bold;
 }
 .Customer_review{
+    position: relative;
     display: flex;
     flex-direction: row;
     justify-content: center;
     align-items: center;
     padding: 60px 170px;
     gap: 60px;
-    position: relative;
-    width: 100%;
 }
 .review_text{
     display: flex;
@@ -272,35 +282,28 @@ body{
     align-items: center;
     gap: 15px;
 }
-.borter{
-    border: 1px grey solid;
-    width: 100%;
+.borter,
+.borter1,
+.borter2,
+.borter4,
+.borter6{
     position: absolute;
-    margin-bottom: 400px;
-    border-top: 1px solid rgba(0, 0, 0, 0.2);
-}
-.borter1{
-    border: 1px grey solid;
+    top: 0;
+    left: 0;
     width: 100%;
-    position: absolute;
-    margin-top: 790px;
+    height: 0;
+    border: none;
     border-top: 1px solid rgba(0, 0, 0, 0.2);
-}
-.borter2{
-    border: 1px grey solid;
-    width: 100%;
-    position: absolute;
-    margin-bottom: 400px;
-    border-top: 1px solid rgba(0, 0, 0, 0.2);
+    margin: 0;
 }
 .email{
+    position: relative;
     display: flex;
     flex-direction: column;
-    margin-top: 50px;
+    margin-top: 110px;
+    padding: 60px 0;
     gap: 10px;
     justify-content: center;
-    padding-bottom: 50px;
-    padding-top: 50px;
 }
 .subscribe{
     display: flex;
@@ -310,35 +313,35 @@ body{
     place-content: center;
 
 }
-.borter4{
-    border: 1px grey solid;
-    width: 100%;
-    position: absolute;
-    margin-bottom: 350px;
-    border-top: 1px solid rgba(0, 0, 0, 0.2);
-
-}
 .update{
     display: flex;
     font-size: 16px;
     place-content: center;
 }
 .email1{
+    align-self: center;
+    width: 650px;
     font-weight: bold;
     font-size: 14px;
-    place-self: flex-start;
-    padding-left: 390px;
 }
 .entergm{
-    display: flex;
-    font-size: 14px;
-    color: rgba(0, 0, 0, 0.5);
-    place-self: flex-start;
-    margin-left: 390px;
-    border: grey solid 1px;
+    align-self: center;
     width: 650px;
+    font-size: 14px;
+    color: black;
+    border: grey solid 1px;
     padding: 6px;
     margin-top: 5px;
+    box-sizing: border-box;
+    font-family: inherit;
+    background: white;
+    outline: none;
+}
+.entergm::placeholder{
+    color: rgba(0, 0, 0, 0.5);
+}
+.entergm:focus{
+    border-color: #555;
 }
 .subsc{
     display: flex;
@@ -357,7 +360,7 @@ body{
     margin-top: 40px;
     width: 160px;
     height: 48px;
-    place-content: center;
+    cursor: pointer;
 }
 .mult{
     display: flex;
@@ -367,27 +370,20 @@ body{
     place-content: center;
 }
 .privacy{
+    align-self: center;
+    width: 650px;
     font-size: 12px;
     color: rgba(0, 0, 0, 0.5);
-    place-self: flex-start;
-    margin-left: 390px;
 }
+
 .footer{
+    position: relative;
     display: flex;
     flex-direction: row;
     justify-content: center;
     gap: 60px;
-    margin-top: 150px;
-    font-weight: var(400);
+    margin-top: 60px;
+    padding: 50px 0;
+    font-weight: 400;
     font-size: 20px;
-    margin-bottom: 110px;
-
-}
-.borter6{
-    border: 1px grey solid;
-    width: 100%;
-    position: absolute;
-    margin-bottom: 350px;
-    border-top: 1px solid rgba(0, 0, 0, 0.2);
-    margin-top: -100px;
 }
